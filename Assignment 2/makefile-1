@@ -1,0 +1,13 @@
+CC      = g++
+CFLAGS  = -Wall
+LDFLAGS =
+OBJFILES = assignment2.cpp
+TARGET   = assignment2.tar
+
+all: $(TARGET)
+
+$(TARGET): $(OBJFILES)
+        $(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
+
+clean:
+        rm –f $(OBJFILES) $(TARGET) *~
